@@ -42,15 +42,15 @@ console.log(comments)
     <div className='flex items-start justify-between '> 
          <div className='flex w-full flex-1 flex-row gap-4 '> 
              <div className='flex flex-col items-center'>
-                 <Link href={`/profile/${author.id}`} className='relative h-11 w-11'>
-                    <Image src={author.image} className='rounded-full'  alt="profile image" fill></Image>
+                 <Link href={`/profile/${author?.id}`} className='relative h-11 w-11'>
+                    <Image src={author?.image} className='rounded-full'  alt="profile image" fill></Image>
                 </Link> 
                 
             <div className='thread-card_bar'/>
 
              </div>
              <div className='flex w-full flex-col'>
-             <Link href={`/profile/${author.id}`} className='w-fit'>
+             <Link href={`/profile/${author?.id}`} className='w-fit'>
 
 
              <h4 className='cursor-pointer text-base-semibold text-light-1 '>{author?.username}</h4>
